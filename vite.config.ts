@@ -9,6 +9,7 @@ export default defineConfig({
     VitePWA({
       registerType: 'autoUpdate',
       includeAssets: ['apple-touch-icon.png', 'favicon.svg'],
+      workbox: { globPatterns: ['**/*.{js,css,html,woff2,png,svg}'] },
       manifest: {
         name: "Hollis's Hours Outside",
         short_name: 'Outside',
